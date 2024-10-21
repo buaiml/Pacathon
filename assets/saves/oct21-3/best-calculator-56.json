@@ -1,0 +1,540 @@
+{
+  "isAddBias": true,
+  "inputs": [
+    {
+      "id": 0,
+      "x": 0.1,
+      "incoming": []
+    },
+    {
+      "id": 1,
+      "x": 0.1,
+      "incoming": []
+    },
+    {
+      "id": 2,
+      "x": 0.1,
+      "incoming": []
+    },
+    {
+      "id": 3,
+      "x": 0.1,
+      "incoming": []
+    },
+    {
+      "id": 4,
+      "x": 0.1,
+      "incoming": []
+    },
+    {
+      "id": 5,
+      "x": 0.1,
+      "incoming": []
+    }
+  ],
+  "hidden": [
+    {
+      "id": 11,
+      "x": 0.49999997,
+      "incoming": [
+        {
+          "fromId": 0,
+          "weight": 0.7641629,
+          "enabled": true
+        },
+        {
+          "fromId": 3,
+          "weight": 0.80850387,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "x": 0.49999997,
+      "incoming": [
+        {
+          "fromId": 1,
+          "weight": 2.001179,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": -0.46623152,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "x": 0.49999997,
+      "incoming": [
+        {
+          "fromId": 2,
+          "weight": 0.61018574,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": -1.3347825,
+          "enabled": true
+        },
+        {
+          "fromId": 4,
+          "weight": -0.42727387,
+          "enabled": true
+        },
+        {
+          "fromId": 3,
+          "weight": -0.21809122,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "x": 0.49999997,
+      "incoming": [
+        {
+          "fromId": 2,
+          "weight": -0.8673107,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": -1.0695026,
+          "enabled": true
+        },
+        {
+          "fromId": 1,
+          "weight": -0.88185215,
+          "enabled": true
+        },
+        {
+          "fromId": 4,
+          "weight": -0.4702679,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "x": 0.49999997,
+      "incoming": [
+        {
+          "fromId": 1,
+          "weight": 0.8598641,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": -0.90188545,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "x": 0.49999997,
+      "incoming": [
+        {
+          "fromId": 0,
+          "weight": -0.73111296,
+          "enabled": true
+        },
+        {
+          "fromId": 3,
+          "weight": -1.2087523,
+          "enabled": true
+        },
+        {
+          "fromId": 2,
+          "weight": 0.034289762,
+          "enabled": true
+        },
+        {
+          "fromId": 1,
+          "weight": -0.14501403,
+          "enabled": true
+        },
+        {
+          "fromId": 4,
+          "weight": 0.21784155,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "x": 0.59999996,
+      "incoming": [
+        {
+          "fromId": 20,
+          "weight": 0.9046616,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": -1.465641E-4,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "x": 0.7,
+      "incoming": [
+        {
+          "fromId": 18,
+          "weight": 0.01858487,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": -0.7905834,
+          "enabled": true
+        },
+        {
+          "fromId": 1,
+          "weight": -0.15909714,
+          "enabled": true
+        },
+        {
+          "fromId": 20,
+          "weight": 0.8015864,
+          "enabled": true
+        },
+        {
+          "fromId": 101,
+          "weight": 1.0921924,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "x": 0.7,
+      "incoming": [
+        {
+          "fromId": 11,
+          "weight": -0.438623,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": 1.1878761,
+          "enabled": true
+        },
+        {
+          "fromId": 3,
+          "weight": -1.123704,
+          "enabled": true
+        },
+        {
+          "fromId": 24,
+          "weight": -0.40908763,
+          "enabled": true
+        },
+        {
+          "fromId": 18,
+          "weight": -0.9886239,
+          "enabled": true
+        },
+        {
+          "fromId": 5,
+          "weight": -1.6581414,
+          "enabled": true
+        },
+        {
+          "fromId": 22,
+          "weight": 0.61254334,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "x": 0.7,
+      "incoming": [
+        {
+          "fromId": 20,
+          "weight": 0.1775468,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": 0.9171058,
+          "enabled": true
+        },
+        {
+          "fromId": 24,
+          "weight": -0.08489804,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "x": 0.7,
+      "incoming": [
+        {
+          "fromId": 24,
+          "weight": 1.1953843,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": 0.035830855,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "x": 0.79999995,
+      "incoming": [
+        {
+          "fromId": 32,
+          "weight": -0.8200141,
+          "enabled": true
+        },
+        {
+          "fromId": 0,
+          "weight": -1.0937632,
+          "enabled": true
+        },
+        {
+          "fromId": 2,
+          "weight": -0.17210811,
+          "enabled": true
+        },
+        {
+          "fromId": 18,
+          "weight": 0.093324095,
+          "enabled": true
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "id": 6,
+      "x": 0.9,
+      "incoming": [
+        {
+          "fromId": 0,
+          "weight": -0.10386026,
+          "enabled": true
+        },
+        {
+          "fromId": 1,
+          "weight": 0.31315854,
+          "enabled": false
+        },
+        {
+          "fromId": 2,
+          "weight": -0.48492256,
+          "enabled": false
+        },
+        {
+          "fromId": 3,
+          "weight": -0.29395568,
+          "enabled": true
+        },
+        {
+          "fromId": 4,
+          "weight": 0.37558234,
+          "enabled": true
+        },
+        {
+          "fromId": 20,
+          "weight": -1.4620963,
+          "enabled": true
+        },
+        {
+          "fromId": 16,
+          "weight": 2.2011852,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "x": 0.9,
+      "incoming": [
+        {
+          "fromId": 0,
+          "weight": 0.32994458,
+          "enabled": false
+        },
+        {
+          "fromId": 1,
+          "weight": -0.79549956,
+          "enabled": true
+        },
+        {
+          "fromId": 2,
+          "weight": 0.039557755,
+          "enabled": true
+        },
+        {
+          "fromId": 3,
+          "weight": -0.21629529,
+          "enabled": true
+        },
+        {
+          "fromId": 4,
+          "weight": 0.5528336,
+          "enabled": true
+        },
+        {
+          "fromId": 11,
+          "weight": 0.9048728,
+          "enabled": true
+        },
+        {
+          "fromId": 41,
+          "weight": 0.061160706,
+          "enabled": true
+        },
+        {
+          "fromId": 32,
+          "weight": -0.62862194,
+          "enabled": true
+        },
+        {
+          "fromId": 47,
+          "weight": 1.1354114,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "x": 0.9,
+      "incoming": [
+        {
+          "fromId": 0,
+          "weight": 0.04318148,
+          "enabled": true
+        },
+        {
+          "fromId": 1,
+          "weight": -0.5736072,
+          "enabled": true
+        },
+        {
+          "fromId": 2,
+          "weight": -0.54648906,
+          "enabled": true
+        },
+        {
+          "fromId": 3,
+          "weight": 0.72467273,
+          "enabled": true
+        },
+        {
+          "fromId": 4,
+          "weight": 0.3841963,
+          "enabled": true
+        },
+        {
+          "fromId": 11,
+          "weight": 0.72472185,
+          "enabled": true
+        },
+        {
+          "fromId": 5,
+          "weight": 0.7822476,
+          "enabled": true
+        },
+        {
+          "fromId": 22,
+          "weight": 0.3034445,
+          "enabled": true
+        },
+        {
+          "fromId": 20,
+          "weight": 1.2395077,
+          "enabled": true
+        },
+        {
+          "fromId": 32,
+          "weight": 0.31442374,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "x": 0.9,
+      "incoming": [
+        {
+          "fromId": 0,
+          "weight": -0.14869577,
+          "enabled": true
+        },
+        {
+          "fromId": 1,
+          "weight": -0.008117929,
+          "enabled": true
+        },
+        {
+          "fromId": 2,
+          "weight": -1.2438565,
+          "enabled": true
+        },
+        {
+          "fromId": 3,
+          "weight": -0.59588987,
+          "enabled": true
+        },
+        {
+          "fromId": 4,
+          "weight": 0.44294688,
+          "enabled": true
+        },
+        {
+          "fromId": 18,
+          "weight": -0.34322798,
+          "enabled": false
+        },
+        {
+          "fromId": 20,
+          "weight": -0.28999704,
+          "enabled": true
+        },
+        {
+          "fromId": 32,
+          "weight": -1.1251336,
+          "enabled": true
+        },
+        {
+          "fromId": 47,
+          "weight": -1.4046988,
+          "enabled": true
+        },
+        {
+          "fromId": 24,
+          "weight": -0.41295922,
+          "enabled": false
+        },
+        {
+          "fromId": 64,
+          "weight": -0.16639823,
+          "enabled": true
+        },
+        {
+          "fromId": 80,
+          "weight": 0.82104206,
+          "enabled": true
+        },
+        {
+          "fromId": 41,
+          "weight": -0.6041287,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}
