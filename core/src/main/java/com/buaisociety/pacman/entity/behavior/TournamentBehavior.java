@@ -7,6 +7,8 @@ import com.cjcrafter.neat.compute.Calculator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class TournamentBehavior implements Behavior {
 
     private final Calculator calculator;
@@ -48,9 +50,27 @@ public class TournamentBehavior implements Behavior {
         // --- END OF DO NOT REMOVE ---
 
         // TODO: Put all your code for info into the neural network here
+        // We are going to use these directions a lot for different inputs. Get them all once for clarity and brevity
+        Direction forward = pacman.getDirection();
+        Direction left = pacman.getDirection().left();
+        Direction right = pacman.getDirection().right();
+        Direction behind = pacman.getDirection().behind();
+
+        // Input nodes 1, 2, 3, and 4 show if the pacman can move in the forward, left, right, and behind directions
+        boolean canMoveForward = pacman.canMove(forward);
+        boolean canMoveLeft = pacman.canMove(left);
+        boolean canMoveRight = pacman.canMove(right);
+        boolean canMoveBehind = pacman.canMove(behind);
+
+        float randomNumber = ThreadLocalRandom.current().nextFloat();
+
 
         float[] inputs = new float[] {
-            // TODO: Add your inputs here
+            canMoveForward ? 1f : 0f,
+            canMoveLeft ? 1f : 0f,
+            canMoveRight ? 1f : 0f,
+            canMoveBehind ? 1f : 0f,
+            randomNumber
         };
         float[] outputs = calculator.calculate(inputs).join();
 
