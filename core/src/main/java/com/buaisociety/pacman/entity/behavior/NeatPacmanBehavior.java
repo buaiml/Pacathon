@@ -11,6 +11,8 @@ import com.buaisociety.pacman.entity.PacmanEntity;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class NeatPacmanBehavior implements Behavior {
 
     private final @NotNull Client client;
@@ -20,6 +22,9 @@ public class NeatPacmanBehavior implements Behavior {
     // This is great for training, because we can take away points from
     // specific pools of points instead of subtracting from all.
     private int scoreModifier = 0;
+
+    private int numberUpdatesSinceLastScore = 0;
+    private int lastScore = 0;
 
     public NeatPacmanBehavior(@NotNull Client client) {
         this.client = client;
@@ -39,7 +44,18 @@ public class NeatPacmanBehavior implements Behavior {
         }
 
         // SPECIAL TRAINING CONDITIONS
-        // TODO: Make changes here to help with your training...
+
+        int newScore = pacman.getMaze().getLevelManager().getScore();
+        if (newScore > lastScore) {
+            lastScore = newScore;
+            numberUpdatesSinceLastScore = 0;
+        }
+
+        if (numberUpdatesSinceLastScore++ > 60 * 10) {
+            pacman.kill();
+            return Direction.UP;
+        }
+
         // END OF SPECIAL TRAINING CONDITIONS
 
         // We are going to use these directions a lot for different inputs. Get them all once for clarity and brevity
@@ -54,11 +70,14 @@ public class NeatPacmanBehavior implements Behavior {
         boolean canMoveRight = pacman.canMove(right);
         boolean canMoveBehind = pacman.canMove(behind);
 
+        float randomNumber = ThreadLocalRandom.current().nextFloat();
+
         float[] outputs = client.getCalculator().calculate(new float[]{
             canMoveForward ? 1f : 0f,
             canMoveLeft ? 1f : 0f,
             canMoveRight ? 1f : 0f,
             canMoveBehind ? 1f : 0f,
+            randomNumber
         }).join();
 
         int index = 0;
